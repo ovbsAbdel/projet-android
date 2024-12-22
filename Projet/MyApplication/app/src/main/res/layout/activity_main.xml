@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#FFFFFF"> <!-- Color of the background -->
+
+    <!-- ImageView ("Background picture") -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/top"
+        android:scaleType="fitXY" /> <!-- The scale of the picture (To take all the phone) -->
+        />
+    <!-- Text in the middle of the sheet ("SUDOKU") -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SUDOKU"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="305dp"
+        android:layout_marginBottom="60dp"
+        android:textColor="#00FFEA"/> <!-- Color of the text of sudoku -->
+
+    <!-- Button play -->
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_marginBottom="10dp"
+        android:text="PLAY"
+        android:textColor="#FFFFFF" />
+    <!-- Button Scores -->
+    <Button
+        android:id="@+id/btnScores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPlay"
+        android:layout_marginBottom="16dp"
+        android:text="SCORES"
+        android:textColor="#FFFFFF" />
+    <!-- Button Leave -->
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnScores"
+        android:text="QUITTER"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
